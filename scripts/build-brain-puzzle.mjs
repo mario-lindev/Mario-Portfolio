@@ -1,5 +1,5 @@
 // Web adaptation of Pegasus Brain3D.tsx's asset loading and normalization.
-// Copyright (c) 2024 Pegasus Contributors. MIT: src/vendor/pegasus/LICENSE.txt.
+// Copyright (c) 2024 Pegasus Contributors. MIT: public/third-party-notices.txt.
 import fs from 'node:fs/promises';
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
@@ -9,7 +9,7 @@ import {mergeGeometries,mergeVertices} from 'three/examples/jsm/utils/BufferGeom
 import {Brush,Evaluator,INTERSECTION,computeMeshVolume} from 'three-bvh-csg';
 class FileReaderNode{readAsArrayBuffer(b){b.arrayBuffer().then(r=>{this.result=r;this.onloadend?.();});}readAsDataURL(b){b.arrayBuffer().then(r=>{this.result='data:'+b.type+';base64,'+Buffer.from(r).toString('base64');this.onloadend?.();});}}
 globalThis.FileReader??=FileReaderNode;
-const data=await fs.readFile('public/models/pegasus-fsaverage5.glb');
+const data=await fs.readFile(new URL('./assets/pegasus-fsaverage5.glb',import.meta.url));
 const gltf=await new GLTFLoader().parseAsync(data.buffer.slice(data.byteOffset,data.byteOffset+data.byteLength),'');
 const brain=gltf.scene;brain.rotation.x=-Math.PI/2;brain.updateMatrixWorld(true);
 const bounds0=new THREE.Box3().setFromObject(brain),center=bounds0.getCenter(new THREE.Vector3()),scale=2.8/bounds0.getSize(new THREE.Vector3()).z;

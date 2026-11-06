@@ -1,6 +1,6 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {AUQUARA_DESIGN as design,createAuquaraModel,outline} from '../src/auquaraModel.js';
+import {AUQUARA_DESIGN as design,createAuquaraModel} from '../src/auquaraModel.js';
 const part=id=>design.parts.find(p=>p.id===id);
 assert.deepEqual(part('board').shape,{kind:'rectangle',width:190,depth:380,chamfer:0});
 assert.equal(design.palette.base,'#e3e6e0');

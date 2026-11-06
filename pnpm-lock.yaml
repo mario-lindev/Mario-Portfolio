@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@designcodeio/threeui':
-        specifier: 1.2.0
-        version: 1.2.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(three@0.165.0)
       react:
         specifier: 19.2.0
         version: 19.2.0
@@ -32,13 +29,6 @@ importers:
         version: 7.3.1
 
 packages:
-
-  '@designcodeio/threeui@1.2.0':
-    resolution: {integrity: sha512-E6F/+IPfLKYatB5W62H3gK1bp9WYvfO6xuWBaBh8oLVR7fbTeeEwgLqqy7ZPMA0zmDpAy03nKYOIswBXsstL2g==}
-    peerDependencies:
-      react: '>=18 <20'
-      react-dom: '>=18 <20'
-      three: '>=0.149 <1'
 
   '@esbuild/aix-ppc64@0.27.7':
     resolution: {integrity: sha512-EKX3Qwmhz1eMdEJokhALr0YiD0lhQNwDqkPYyPhiSwKrh7/4KRjQc04sZ8db+5DVVnZ1LmbNDI1uAMPEUBnQPg==}
@@ -411,12 +401,6 @@ packages:
     peerDependencies:
       three: '>= 0.159.0'
 
-  three@0.128.0:
-    resolution: {integrity: sha512-i0ap/E+OaSfzw7bD1TtYnPo3VEplkl70WX5fZqZnfZsE3k3aSFudqrrC9ldFZfYFkn1zwDmBcdGfiIm/hnbyZA==}
-
-  three@0.165.0:
-    resolution: {integrity: sha512-cc96IlVYGydeceu0e5xq70H8/yoVT/tXBxV/W8A/U6uOq7DXc4/s1Mkmnu6SqoYGhSRWWYFOhVwvq6V0VtbplA==}
-
   three@0.180.0:
     resolution: {integrity: sha512-o+qycAMZrh+TsE01GqWUxUIKR1AL0S8pq7zDkYOQw8GqfX8b8VoCKYUoHbhiX5j+7hr8XsuHDVU6+gkQJQKg9w==}
 
@@ -465,14 +449,6 @@ packages:
         optional: true
 
 snapshots:
-
-  '@designcodeio/threeui@1.2.0(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(three@0.165.0)':
-    dependencies:
-      react: 19.2.0
-      react-dom: 19.2.0(react@19.2.0)
-      three: 0.165.0
-      three128: three@0.128.0
-      three165: three@0.165.0
 
   '@esbuild/aix-ppc64@0.27.7':
     optional: true
@@ -731,10 +707,6 @@ snapshots:
   three-mesh-bvh@0.9.7(three@0.180.0):
     dependencies:
       three: 0.180.0
-
-  three@0.128.0: {}
-
-  three@0.165.0: {}
 
   three@0.180.0: {}
 

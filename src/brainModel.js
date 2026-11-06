@@ -1,5 +1,5 @@
 // Web adaptation of Pegasus Brain3D.tsx. Copyright (c) 2024 Pegasus Contributors.
-// MIT license and original implementation: ./vendor/pegasus/.
+// MIT license and pinned upstream source: public/third-party-notices.txt.
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
 export async function loadBrainModel(){

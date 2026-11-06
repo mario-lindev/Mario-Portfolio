@@ -1,48 +1,52 @@
 # Mario Lin — Student, robotics & Auquara
 
-Personal portfolio redesigned with Impeccable in a light, Apple-inspired visual language and purposeful motion informed by Emil Kowalski's published interaction guidance.
+A React/Vite portfolio with an interactive brain puzzle, an explorable Auquara city model, education and achievements, optional music, and light/dark appearance.
 
-## Develop
+## Local development
+
+Use Node.js 20.19+ or 22.12+ and pnpm.
 
 ```sh
-pnpm install
+pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-## Build and deploy
+## Checks and production build
 
 ```sh
-pnpm build
+pnpm check
 ```
 
-Vercel settings: Vite preset, `pnpm build`, output `dist`, production branch `main`. Hosting connection was blocked by Vercel team-scope access; no successful deployment is claimed.
+This runs the city and brain geometry checks, then builds the site into `dist/`. Run `pnpm preview` to inspect that build. For Vercel, use the Vite preset, build command `pnpm build`, output directory `dist`, and production branch `main`.
 
-## Experience
+## Project layout
 
-- The hero loads the Pegasus fsaverage5 cortical model from commit 52ba71e3b4bb53063eff035a6e2223388889ca1c. About 65% of its solid puzzle volume stays assembled in distributed cells; 37 rounded pieces fill scattered gaps across the whole brain, hold complete for one second, then reset and rebuild. Drag rotates independently, arrow keys rotate, and Home resets. Reduced motion starts at the complete state; pausing retains the current frame. The previous ThreeUI shaders remain as licensed reference material.
-- Authored Three.js geometric city with assembled/exploded systems views, deferred until near the viewport.
-- Inline accessible project disclosure, spring-based view selector, and robotics/code switcher.
-- Direct city manipulation with pointer capture and projected momentum, keyboard rotation, and reset. Mobile layout, keyboard focus, reduced-motion support, manual animation control, reduced-transparency and increased-contrast fallbacks.
-- No analytics, form backend, or collection of contact information.
+- `src/main.jsx`: portfolio content, navigation, theme, and music controls.
+- `src/BrainScene.jsx` and `src/brainModel.js`: brain rendering, rotation, and puzzle timing.
+- `src/CityScene.jsx`, `src/auquaraModel.js`, and `src/physics.js`: city geometry, camera orbit, and spring interactions.
+- `src/style.css`: responsive layout, themes, accessibility preferences, and controls.
+- `public/audio/`: the user-supplied music track, loaded only when played.
+- `public/models/`: the brain puzzle and downloadable city GLB/CAD, metadata, and model documentation.
+- `scripts/`: offline geometry generators and checks. `scripts/assets/` holds the original brain model used only during generation.
+- `PRODUCT.md`, `DESIGN.md`, and `.impeccable/`: current product facts and design guidance.
 
-The interactive Auquara model is reconstructed from four user-supplied photos. Dimensions and obscured surfaces are estimates: the nominal board is 190 × 380 mm. Original photos are not distributed. Geometry is shared between the website, GLB assembly, and editable OpenSCAD export. Edit `src/auquaraModel.js`, then run `pnpm model:export` to regenerate `public/models/`. Open `auquara.scad` in OpenSCAD and adjust `scale_factor` to resize it. Factual content was checked against his LinkedIn profile on November 5, 2026. Current enrollment and language proficiencies follow that profile; volunteer dates reflect the listed term.
+Generated build output, dependencies, logs, environment files, and review screenshots are ignored by Git.
 
-Edit `src/main.jsx` for content, `src/CityScene.jsx` for city geometry and drag interaction, `src/physics.js` for spring behavior, and `src/style.css` for styling. Full ThreeUI license is shipped in `public/third-party-notices.txt`. Durable context lives in `PRODUCT.md`, `DESIGN.md`, and `.impeccable/`.
+## Model maintenance
 
-Credits: [ThreeUI](https://threeui.com), [Emil Kowalski's motion guidance](https://emilkowal.ski/ui/good-vs-great-animations), and [Mario Lin on LinkedIn](https://www.linkedin.com/in/mario-lin7/).
+```sh
+pnpm model:export  # regenerate Auquara GLB, OpenSCAD, and design metadata
+pnpm model:check
+pnpm brain:build   # regenerate the brain puzzle from scripts/assets/pegasus-fsaverage5.glb
+pnpm brain:check
+```
 
-The finished reconstruction infers ceilings over the brown tower shells, completes the partially covered quartered satellite, and extrudes the drawn parcels on the flat satellite. Inferred components are marked in auquara-design.json. Deliberate circular openings and gray courtyard roof openings remain.
+Auquara follows four photos supplied by Mario. Its nominal board is 190 × 380 mm; dimensions and hidden geometry are estimates. The main island is circular, the display base rectangular, and the lower-left satellite is a planted greenhouse. The website and city exports share one geometry source. The original photographs are not distributed. Scale the CAD with `scale_factor` in `public/models/auquara.scad`.
 
-Auquara uses light-blue offices, white housing, and gray factories with paved ground and separate lawns, sage pocket parks, perimeter plantings, 21 stylized trees, and four roof gardens. Landscaping is an authored addition.
+The brain puzzle keeps about 65% assembled while 37 rounded pieces fill scattered gaps. It holds complete for one second before rebuilding. Reduced motion shows the complete brain; pause preserves the current frame.
 
-Both the outer board and central city platform are rectangular, while circular city routes remain.
+## Content and credits
 
-Appearance: the header toggle switches Light/Dark and saves the preference locally. Dark mode uses light primary text, high-contrast secondary text, and dark backgrounds across chrome, controls, project stages, code, stories, and footer. The appearance button text is explicitly light.
+Profile facts were checked on November 5, 2026 against [Mario’s LinkedIn](https://www.linkedin.com/in/mario-lin7/). Mario confirmed the AMC 10 score of 70/150. The Gold Coast floating-city scenario comes directly from Mario.
 
-## Brain geometry
-
-Run `pnpm brain:check` to validate solids and the one-second completed hold. Run `pnpm brain:build` to regenerate the solid CSG-cut model from `public/models/pegasus-fsaverage5.glb`. The original Pegasus implementation and MIT license are in `src/vendor/pegasus/`; notices ship in `public/third-party-notices.txt`. Source: [Pegasus Brain3D.tsx](https://github.com/rishith-c/pegasus/blob/52ba71e3b4bb53063eff035a6e2223388889ca1c/frontend/src/components/Brain3D.tsx). Geometry build dependencies run offline and are excluded from the browser bundle. The FreeSurfer model illustrates the portfolio and is not used for medical interpretation.
-
-Auquara’s default orthographic view aligns with the platform edges so the rectangular footprint is visible as a rectangle. Its offices are light blue, housing white, and factories gray; paved ground is broken up by pocket lawns and planting beds. Outer modules are blue offices or gray factories. The CAD preserves right-angle rectangular boards.
-
-Assembly direction: missing brain cells are scattered throughout all four vertical bands and across both hemispheres. Arrival order is shuffled, with varied outward approaches and curved paths; no horizontal cutout plane remains. The one-second fully assembled hold is preserved.
+[ThreeUI](https://threeui.com/) inspired the original visual direction; its unused package and shaders have been removed. The brain derives from [Pegasus](https://github.com/rishith-c/pegasus/tree/52ba71e3b4bb53063eff035a6e2223388889ca1c), pinned to commit `52ba71e3b4bb53063eff035a6e2223388889ca1c`. License notices are consolidated in `public/third-party-notices.txt`. Interaction references include Apple’s fluid-interface principles and [Emil Kowalski’s guidance](https://emilkowal.ski/ui/good-vs-great-animations).

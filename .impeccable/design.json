@@ -311,14 +311,6 @@
       "css": ":host{font-family:-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;color:var(--ink,#1d1d1f)}.ds-text-button{ display: flex; align-items: center; gap: 10px; font-size: 0.75rem; color: var(--secondary,#65656b); min-height: 44px; }.ds-text-button:hover{ color: var(--ink,#1d1d1f); }.ds-text-button{font-optical-sizing:auto;}.ds-text-button:focus-visible{outline:3px solid var(--blue,#0068d7);outline-offset:5px;}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}button{font-family:inherit;cursor:pointer}a{text-decoration:none}"
     },
     {
-      "name": "Project disclosure",
-      "kind": "button",
-      "refersTo": "button-round",
-      "description": "Circular project disclosure in its closed state.",
-      "html": "<button class=\"ds-round-button\" aria-label=\"Explore Auquara project details\" aria-expanded=\"false\"><svg width=\"22\" height=\"22\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.55\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg></button>",
-      "css": ":host{font-family:-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;color:var(--ink,#1d1d1f)}.ds-round-button{ display: grid; place-items: center; width: 38px; height: 38px; border: 0; background: #f1f1f3; border-radius: 50%; transition: background 150ms,transform 200ms var(--ease,cubic-bezier(.16,1,.3,1)); }.ds-round-button:hover{ background: #e6e6ec; }.ds-round-button:active{ transform: scale(.94); }.ds-round-button svg.rotated{ transform: rotate(45deg); }.ds-round-button{font-optical-sizing:auto;}.ds-round-button:focus-visible{outline:3px solid var(--blue,#0068d7);outline-offset:5px;}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}button{font-family:inherit;cursor:pointer}a{text-decoration:none}"
-    },
-    {
       "name": "Reset view",
       "kind": "button",
       "refersTo": "reset-view",
@@ -341,22 +333,6 @@
       "description": "Existing timeline status marker; not a universal label scale.",
       "html": "<span class=\"ds-current-label\">Now</span>",
       "css": ":host{font-family:-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;color:var(--ink,#1d1d1f)}.ds-current-label{ background: #edf5ff; color: #0063c7; padding: 5px 9px; border-radius: 20px; font-size: 0.5625rem; font-weight: 500; letter-spacing: 0; }.ds-current-label{font-optical-sizing:auto;}.ds-current-label:focus-visible{outline:3px solid var(--blue,#0068d7);outline-offset:5px;}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}"
-    },
-    {
-      "name": "Interest stage",
-      "kind": "card",
-      "refersTo": "interest-stage",
-      "description": "Rounded stage with the actual FRC team typographic study.",
-      "html": "<div class=\"ds-interest-symbol\"><div class=\"ds-team-study\"><span>604</span><p>FRC Robotics</p></div></div>",
-      "css": ":host{font-family:-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;color:var(--ink,#1d1d1f)}.ds-interest-symbol{ height: 290px; background: #f7f7f9; display: grid; place-items: center; overflow: hidden; border-radius: 16px; }.ds-team-study{ text-align: center; color: #3f5367; }.ds-team-study>span{ display: block; font-size: clamp(6.25rem,12vw,9.625rem); font-weight: 650; line-height: 1; letter-spacing: -.04em; font-variant-numeric: tabular-nums; }.ds-team-study>p{ font-size: 0.8125rem; letter-spacing: .04em; margin-top: 14px; color: #5d6d7e; }.ds-interest-symbol,.ds-team-study{font-optical-sizing:auto;}.ds-interest-symbol:focus-visible,.ds-team-study:focus-visible{outline:3px solid var(--blue,#0068d7);outline-offset:5px;}@media(max-width:720px){.ds-interest-symbol{height:255px;border-radius:14px}}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}"
-    },
-    {
-      "name": "Code study",
-      "kind": "card",
-      "refersTo": "code-study",
-      "description": "Authored code illustration shown in the Code interest state.",
-      "html": "<div class=\"ds-code-object\"><span>def <b>build</b>(idea):</span><span>  learn()</span><span>  try_again()</span><span>  <i>return</i> possibility</span></div>",
-      "css": ":host{font-family:-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;color:var(--ink,#1d1d1f)}.ds-code-object{ font: .875rem/1.85 ui-monospace,SFMono-Regular,Menlo,monospace; color: #5c6874; background: white; padding: 30px 40px; border-radius: 12px; box-shadow: 0 12px 36px #2335490c; transform: rotate(-4deg); }.ds-code-object span{ display: block; white-space: pre; }.ds-code-object b{ font-weight: 500; color: #252b34; }.ds-code-object i{ font-style: normal; color: #0068d7; }.ds-code-object{font-optical-sizing:auto;}.ds-code-object:focus-visible{outline:3px solid var(--blue,#0068d7);outline-offset:5px;}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}"
     },
     {
       "name": "In-page navigation",

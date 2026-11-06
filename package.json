@@ -9,10 +9,11 @@
     "preview": "vite preview --host 127.0.0.1",
     "model:export": "node scripts/export-auquara.mjs",
     "brain:build": "node scripts/build-brain-puzzle.mjs",
-    "brain:check": "node scripts/check-brain-puzzle.mjs"
+    "brain:check": "node scripts/check-brain-puzzle.mjs",
+    "model:check": "node scripts/check-auquara.mjs",
+    "check": "pnpm model:check && pnpm brain:check && pnpm build"
   },
   "dependencies": {
-    "@designcodeio/threeui": "1.2.0",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "three": "0.180.0"

@@ -1,6 +1,6 @@
 import React, {Component, Suspense, lazy, useEffect, useRef, useState} from 'react';
 import {createRoot} from 'react-dom/client';
-const BrainAssembly = lazy(() => import('./MetalScene.jsx')); 
+const BrainAssembly = lazy(() => import('./BrainScene.jsx')); 
 import './style.css';
 import SpringIndicator from './SpringIndicator.jsx';
 
@@ -25,8 +25,6 @@ function Icon({name='arrow', size=20, ...props}) {
     math: <path d="M19 4H5l7 8-7 8h14M19 4v3M19 17v3"/>,
     code: <path d="m8 6-6 6 6 6M16 6l6 6-6 6M14 3l-4 18"/>,
     robot: <><rect x="4" y="7" width="16" height="13" rx="3"/><path d="M12 3v4M8 12v2M16 12v2M9 17h6M1 12v4M23 12v4"/></>,
-    ball: <><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3v18M5.6 5.6c7 2 7 10.8 0 12.8M18.4 5.6c-7 2-7 10.8 0 12.8"/></>,
-    book: <path d="M12 6C9 3 4 4 3 5v15c3-2 6-2 9 0 3-2 6-2 9 0V5c-3-2-6-2-9 1ZM12 6v14"/>,
   };
   return <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.55" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" {...props}>{paths[name]}</svg>;
 }
