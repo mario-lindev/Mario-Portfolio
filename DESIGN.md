@@ -4,6 +4,8 @@ description: A light personal portfolio about making ideas tangible.
 colors:
   blue: "#0068d7"
   blue-hover: "#005fc5"
+  dark-action: "#2467bf"
+  dark-action-hover: "#2a70cc"
   ink: "#1d1d1f"
   secondary: "#65656b"
   white: "#fff"
@@ -18,7 +20,7 @@ colors:
 typography:
   display:
     fontFamily: "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif"
-    fontSize: "clamp(3.25rem,6.6vw,5.375rem)"
+    fontSize: "clamp(3rem,5.5vw,4.75rem)"
     fontWeight: 600
     lineHeight: 1.04
     letterSpacing: "-.04em"
@@ -180,3 +182,9 @@ Appearance: the header toggle switches Light/Dark and saves the preference local
 Auquara’s default orthographic view aligns with the platform edges so the rectangular footprint is visible as a rectangle. Its offices are light blue, housing white, and factories gray; paved ground is broken up by pocket lawns and planting beds. Outer modules are blue offices or gray factories. The CAD preserves right-angle rectangular boards.
 
 Assembly direction: missing brain cells are scattered throughout all four vertical bands and across both hemispheres. Arrival order is shuffled, with varied outward approaches and curved paths; no horizontal cutout plane remains. The one-second fully assembled hold is preserved.
+
+## November 5 content and usability refinement
+
+The opening identifies Mario directly and leads to Auquara. Headings name their content, and the interest selector presents verified facts with LinkedIn source links instead of decorative number tiles and pseudo-code. Retain the established Apple-inspired system typography, white/porcelain surfaces, blue actions, brain puzzle, and interactive city. Section spacing uses a 96px desktop / 64px compact rhythm. Touch controls are at least 44px high; mobile navigation has a dedicated second row with all three destinations. Dark primary actions use #2467bf for readable white labels.
+
+Finish review: passed for this refinement. Browser checks confirmed no horizontal overflow at 320px, 390px, and 1440px; all compact navigation destinations remain visible; appearance, music, animation, and reset buttons measure 44 × 44px or larger. Dark primary-action text contrast measured 5.57:1. Interest switching, project disclosure, and both directions of the city-view toggle were exercised. The build passes. The mechanical detector found only palette/type/radius documentation advisories, with no non-advisory findings; historic token inventory was not rebuilt as part of this refinement. Existing shared Three.js bundle size remains a build advisory.

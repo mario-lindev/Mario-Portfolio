@@ -1,4 +1,4 @@
-# Mario Lin — Curiosity, made tangible.
+# Mario Lin — Student, robotics & Auquara
 
 Personal portfolio redesigned with Impeccable in a light, Apple-inspired visual language and purposeful motion informed by Emil Kowalski's published interaction guidance.
 
