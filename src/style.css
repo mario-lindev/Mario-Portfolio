@@ -482,3 +482,12 @@ html[data-theme=dark] .interest-menu button[aria-pressed=true] { color: var(--in
   .hero-art { margin-top: 20px; }
   .contact-inner h2 { font-size: 2.75rem; }
 }
+
+/* Education and languages verified against the current LinkedIn profile. */
+.education-records { min-width: 0; }
+.timeline li:not(:last-child) { padding-bottom: 35px; }
+.language-summary { margin-top: 44px; }
+.language-summary h3 { font-size: 1.375rem; }
+.language-summary .interest-facts { margin-top: 20px; }
+.language-summary .inline-link { justify-self: start; }
+@media(max-width:720px) { .timeline li:not(:last-child) { padding-bottom: 38px; } .education-records .timeline { margin-top: 40px; } }
