@@ -16,16 +16,17 @@ Visitors exploring Mario’s background. Do not invent client services, hiring c
 
 ## Evidence on Hand
 
-Checked November 5, 2026 at https://www.linkedin.com/in/mario-lin7/:
+Checked November 6, 2026 at https://www.linkedin.com/in/mario-lin7/:
 
 - Leland High School: August 2026–Present, Grade 9. FRC Robotics 604, Leland Hackathon Club, and Key Club; engineering/hardware interests.
 - Stratford School: middle school August 2023–June 2026; elementary August 2017–May 2023, grades 1–5.
-- Stratford activities: Math Club, AMC 8/10, Python, Java, introductory Arduino, basketball starting point guard and co-captain.
+- Almaden Hacks: co-founder in the profile headline and skill associations; Organizations lists Co-Leader, September 2026–Present, associated with Leland High School. Listed skills include Start-up Leadership and Co-creation. No event counts, audience size, or impact metrics are stated.
+- Stratford activities: Math Club, AMC 8/10, Python, Java, HTML, introductory Arduino, basketball starting point guard and co-captain.
 - ACDS Cougar Shootout: second place among 10+ teams, January 2026.
 - AMC 8: 22/25 in sixth grade, March 2024. AMC 10: 70/150 in seventh grade, November 2024; Mario explicitly confirmed the updated award title over its outdated description.
 - Breakthrough Silicon Valley volunteer tutor: listed term October–December 2026.
 - Chinese and English: native or bilingual proficiency. Spanish: limited working proficiency.
-- Auquara: Future City Competition prototype, awarded Excellence in Systems Integration; construction, project management, and systems thinking.
+- Auquara: Future City Competition prototype, awarded Excellence in Systems Integration; construction, project management, and leadership.
 
 ## Capabilities and Constraints
 
