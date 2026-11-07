@@ -47,6 +47,6 @@ The brain puzzle keeps about 65% assembled while 37 rounded pieces fill scattere
 
 ## Content and credits
 
-Profile facts were checked on November 5, 2026 against [Mario’s LinkedIn](https://www.linkedin.com/in/mario-lin7/). Mario confirmed the AMC 10 score of 70/150. The Gold Coast floating-city scenario comes directly from Mario.
+Profile facts were checked on November 6, 2026 against [Mario’s LinkedIn](https://www.linkedin.com/in/mario-lin7/). The refresh adds Almaden Hacks co-founder/co-leader roles and HTML, and verifies education, awards, volunteering, and languages. Leadership dates come from the [Organizations section](https://www.linkedin.com/in/mario-lin7/details/organizations/), and HTML and project leadership from [Skills](https://www.linkedin.com/in/mario-lin7/details/skills/). The AMC 10 score is listed as 70/150. The Gold Coast floating-city scenario comes directly from Mario.
 
 [ThreeUI](https://threeui.com/) inspired the original visual direction; its unused package and shaders have been removed. The brain derives from [Pegasus](https://github.com/rishith-c/pegasus/tree/52ba71e3b4bb53063eff035a6e2223388889ca1c), pinned to commit `52ba71e3b4bb53063eff035a6e2223388889ca1c`. License notices are consolidated in `public/third-party-notices.txt`. Interaction references include Apple’s fluid-interface principles and [Emil Kowalski’s guidance](https://emilkowal.ski/ui/good-vs-great-animations).
