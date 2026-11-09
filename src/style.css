@@ -474,3 +474,13 @@ html[data-theme=dark] .interest-menu button[aria-pressed=true] { color: var(--in
 .language-summary .interest-facts { margin-top: 20px; }
 .language-summary .inline-link { justify-self: start; }
 @media(max-width:720px) { .timeline li:not(:last-child) { padding-bottom: 38px; } .education-records .timeline { margin-top: 40px; } }
+
+/* User-supplied Almaden Valley watercolor grounds the opening in San Jose. */
+.hero { position: relative; isolation: isolate; }
+.hero::before { content: ''; position: absolute; z-index: -1; pointer-events: none; inset: -34px calc(-1 * var(--space)) 0; background-image: linear-gradient(90deg,rgba(255,255,255,.72),rgba(255,255,255,.18) 65%),url('/images/almaden-valley-watercolor.png'); background-size: cover; background-position: center bottom; mask-image: linear-gradient(to bottom,transparent,#000 12%,#000 85%,transparent); }
+.hero-copy>p, .hero .text-button { color: #464b50; }
+.hero-foot { border-color: #8b9c9638; }
+html[data-theme=dark] .hero::before { background-image: linear-gradient(90deg,rgba(17,18,22,.94),rgba(17,18,22,.79) 70%),url('/images/almaden-valley-watercolor.png'); }
+html[data-theme=dark] .hero-copy>p, html[data-theme=dark] .hero .text-button { color: #d1d4dc; }
+@media(max-width:720px) { .hero::before { inset-block-start: -36px; background-position: 62% bottom; } }
+@media(prefers-contrast:more) { .hero::before { opacity: .2; } }

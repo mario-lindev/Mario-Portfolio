@@ -53,3 +53,5 @@ Runtime dependencies are React, React DOM, and Three.js. Offline geometry genera
 - Lead with specific, verified work and link to its source.
 - Preserve user control, accessibility, and the requested model interactions.
 - Keep model generation reproducible and repository documentation current.
+
+The user supplied an Almaden Valley watercolor on November 9, 2026. It appears as a stationary decorative backdrop in the opening section, with theme-aware veils for readability. The brain and project interactions remain intact.
