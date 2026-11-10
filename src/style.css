@@ -476,8 +476,6 @@ html[data-theme=dark] .interest-menu button[aria-pressed=true] { color: var(--in
 @media(max-width:720px) { .timeline li:not(:last-child) { padding-bottom: 38px; } .education-records .timeline { margin-top: 40px; } }
 
 /* November 2026: a quieter, project-led typographic system. */
-@font-face { font-family: 'Space Grotesk'; src: url('/fonts/space-grotesk-variable.woff2') format('woff2'); font-style: normal; font-weight: 300 700; font-display: swap; }
-@font-face { font-family: 'DM Sans'; src: url('/fonts/dm-sans-variable.woff2') format('woff2'); font-style: normal; font-weight: 100 1000; font-display: swap; }
 :root { --font-display: 'Space Grotesk', 'Helvetica Neue', sans-serif; --font-body: 'DM Sans', 'Helvetica Neue', sans-serif; font-family: var(--font-body); --section-space: 112px; }
 h1,h2,h3,h4,.wordmark,.project-lead { font-family: var(--font-display); font-weight: 500; letter-spacing: -.035em; }
 h2 { font-size: clamp(2.25rem,4.3vw,3.5rem); line-height: 1.12; }
@@ -583,3 +581,53 @@ html[data-theme=dark] .about-section { background: var(--page); }
 .signalguard-story>p.project-status { margin-top: 24px; font-size: .8125rem; }
 @media(max-width:1050px) { .signalguard-section { gap: 40px; } }
 @media(max-width:720px) { .signalguard-section { grid-template-columns: 1fr; gap: 30px; padding-block: 56px; margin-top: 8px; } .signalguard-heading h2 { font-size: 2.125rem; } .signalguard-heading>.inline-link { margin-top: 12px; } .signalguard-story>p.project-lead { font-size: 1.5rem; } }
+
+/* Reference-led refinement: Inter prose, Geist Mono identity and metadata. */
+@font-face { font-family: 'Inter'; src: url('/fonts/inter-variable.woff2') format('woff2'); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Geist Mono'; src: url('/fonts/geist-mono-variable.woff2') format('woff2'); font-weight: 100 900; font-style: normal; font-display: swap; }
+:root { --font-display: 'Inter', 'Helvetica Neue', sans-serif; --font-body: 'Inter', 'Helvetica Neue', sans-serif; --font-mono: 'Geist Mono', ui-monospace, monospace; --page: #f6f8fa; --surface: #edf1f5; --ink: #20262c; --secondary: #59636d; --blue: #38627e; --line: #dce2e7; --section-space: 88px; color: var(--ink); background: var(--page); }
+html { scrollbar-color: #98a6b2 var(--page); }
+::selection { background: #ccdde8; color: #182e3d; }
+body { background: var(--page); }
+h1,h2,h3,h4 { font-weight: 450; letter-spacing: -.025em; }
+h2,.about-heading h2,.journey-heading h2 { font-size: clamp(1.875rem,3vw,2.5rem); line-height: 1.2; }
+.site-header { border-bottom: 1px solid var(--line); background: var(--page); backdrop-filter: none; -webkit-backdrop-filter: none; }
+.wordmark { font-family: var(--font-mono); font-weight: 500; font-size: 1.125rem; letter-spacing: -.04em; white-space: nowrap; }
+.wordmark-dot { display: none; }
+.header-inner nav { margin-left: 0; gap: 24px; font-size: .8125rem; }
+.header-inner nav a { color: var(--secondary); }
+.header-actions { gap: 12px; }
+.appearance-toggle,.music-toggle { border-color: transparent; background: transparent; border-radius: 4px; font-family: var(--font-mono); font-size: .6875rem; }
+.hero h1 { font-family: var(--font-mono); font-size: clamp(2.75rem,5vw,4.25rem); font-weight: 500; letter-spacing: -.04em; line-height: 1.1; }
+.hero h1 .hero-period { color: var(--ink); }
+.hero-copy>p.hero-statement { font-size: clamp(1.375rem,2.2vw,1.75rem); font-weight: 400; letter-spacing: -.02em; line-height: 1.4; }
+.hero-copy>p:not(.hero-statement) { font-size: 1rem; max-width: 42ch; line-height: 1.8; }
+.hero-main { gap: 36px; }
+.hero-actions { gap: 24px; }
+.hero .button-primary,.contact-inner>.button-primary { border: 0; border-radius: 0; padding: 10px 0; background: transparent; color: var(--blue); font-family: var(--font-mono); font-size: .75rem; gap: 10px; box-shadow: none; }
+.hero .button-primary:hover,.contact-inner>.button-primary:hover { background: transparent; color: var(--ink); box-shadow: none; text-decoration: underline; }
+.text-button,.nav-connect,.inline-link,.story-source,.award-source,.model-downloads a,.project-disclosure,.back-top,.footer-bottom { font-family: var(--font-mono); font-size: .75rem; }
+.hero-foot,.almaden-title>p,.signalguard-heading>p,.project-status,.timeline-date,.stage-header>span:last-child,.art-caption { font-family: var(--font-mono); font-size: .6875rem; line-height: 1.8; }
+.section-intro>p { font-size: 1rem; }
+.project-summary h3,.about-stories h3,.interest-text h3 { font-size: 1.375rem; }
+.project-visual { background: var(--surface); border-radius: 8px; }
+.project-disclosure { border: 0; background: transparent; padding-inline: 0; }
+.project-disclosure:hover { background: transparent; color: var(--blue); }
+.almaden-title h2,.signalguard-heading h2 { font-size: clamp(1.875rem,3vw,2.5rem); }
+.almaden-story>p.project-lead,.signalguard-story>p.project-lead { font-size: clamp(1.375rem,2.2vw,1.75rem); }
+.interest-menu button { font-size: .875rem; font-weight: 400; }
+.interest-menu button svg:first-child { display: none; }
+.interest-menu button { gap: 12px; }
+.interest-facts { font-variant-numeric: tabular-nums; }
+.current-label { font-family: var(--font-mono); border-radius: 3px; }
+.timeline-content h3 { font-size: 1.375rem; }
+.timeline li:before { box-shadow: 0 0 0 5px var(--page); }
+.contact-section { background: var(--surface); }
+.contact-inner h2 { font-size: clamp(2rem,4vw,3rem); }
+.contact-inner { padding-block: 72px; }
+html[data-theme=dark] { --page: #111519; --surface: #1a2026; --ink: #e7edf2; --secondary: #b1bdc8; --blue: #9cbed6; --line: #303a43; color: var(--ink); background: var(--page); }
+html[data-theme=dark] .site-header { background: var(--page); }
+html[data-theme=dark] .hero .button-primary,html[data-theme=dark] .hero .button-primary:hover { background: transparent; color: var(--blue); }
+html[data-theme=dark] .appearance-toggle,html[data-theme=dark] .music-toggle { background: transparent; }
+@media(max-width:1050px) and (min-width:721px) { .header-inner { width: calc(100% - 48px); } .header-inner nav { gap: 16px; } .header-actions { gap: 2px; } .music-toggle span,.appearance-toggle span { display: none; } .hero-main { gap: 20px; } }
+@media(max-width:720px) { :root { --section-space: 64px; } .hero h1 { font-size: clamp(2.375rem,10vw,3rem); } .hero-copy>p.hero-statement { font-size: 1.375rem; } .hero-main { gap: 0; } .header-inner nav { gap: 30px; } .hero-actions { gap: 22px; } .hero .button-primary { font-size: .75rem; } .text-button { font-size: .6875rem; } .hero-foot>a { font-size: .6875rem; } .section-intro h2,.about-heading h2,.journey-heading h2,.almaden-title h2,.signalguard-heading h2 { font-size: 1.875rem; } .interest-menu { gap: 28px; } .interest-menu button { flex: 0 1 auto; font-size: .875rem; } .project-summary>div>p { max-width: 21ch; } }

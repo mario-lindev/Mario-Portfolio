@@ -3,65 +3,30 @@
 <!-- impeccable:product-schema 1 -->
 
 ## Platform
-
 web
 
-## Product Purpose
+## Purpose
+Mario Lin’s personal portfolio presents his current LinkedIn-listed work and background. React/Vite, with interactive Three.js brain and city scenes. Public repository: mario-lindev/Mario-Portfolio. Production domain: www.mariolin.com, Vercel project mario-portfolio.
 
-Mario Lin’s personal portfolio presents his projects, education, activities, and achievements, with direct LinkedIn contact. It is a single-page React/Vite site with public source at mario-lindev/Mario-Portfolio.
+## Current content authority
+Checked the signed-in LinkedIn profile and its complete Education, Experience, Languages, Organizations, and Projects pages on November 9, 2026. Use this current inventory; removed historical records must not be restored from old commits or conversations.
 
-## Users
+- Mario Lin: student at Leland High School, San Jose; co-founder of Almaden Hacks.
+- Leland: August 2026–present, Grade 9. FRC Robotics 604, Leland Hackathon Club, Key Club; hardware.
+- Almaden Hacks Experience: co-founder, self-employed, September 2026–present; San Jose/hybrid. Student-led hackathon planned for June 2027. Built/designed almadenhacks.com; led sponsorship outreach to companies/local businesses; coordinates team responsibilities and decisions. The record remains on the full Experience page even when the main profile does not render the section.
+- Almaden Hacks Organizations: co-leader, September 2026–present.
+- SignalGuard: machine learning prototype using basic-phone sound recordings to learn a water pump’s healthy acoustic baseline, flag anomalies for inspection, and track monitoring/maintenance history. Built with rural communities in mind. Field validation planned; do not claim proven reliability, deployment, or quantified impact. Associated with Leland.
+- Auquara: prototype city for Future City Competition, focused on efficiency, productivity, and connected systems. Excellence in Systems Integration award. Construction, project management, leadership. No current school association is listed.
+- Breakthrough Silicon Valley: volunteer tutor, October–December 2026, education.
+- ACDS Cougar Shootout: second among 10+ teams at Almaden Country Day School’s annual tournament, January 2026. No current school association or individual basketball role is listed.
+- Chinese/English: native or bilingual proficiency. Spanish: limited working proficiency.
+- Current skill records include full-stack development, research analysis, data analysis, digital signal processing, machine learning, Arduino, leadership, and problem solving. Do not infer historical school activities from skills.
 
-Visitors exploring Mario’s background. Do not invent client services, hiring claims, quantitative impact, contact addresses, testimonials, or additional awards. The site has no account, analytics, or form backend.
+## Removed content
+Stratford education (both elementary and middle school), its dates/diploma/activities, AMC 8/10 scores and grade/year references, basketball starting-point-guard/co-captain claims, old coding-school history, and obsolete school associations are removed from the public site. Do not reintroduce them. The ACDS tournament award itself remains supported.
 
-## Evidence on Hand
+## Design constraints
+Refine the existing portfolio with rishithc.com’s observed Inter prose, Geist Mono identity/metadata, compact type scale, restrained blue links, and pale neutral surfaces. Preserve the existing interactive brain and city, accessible controls, model downloads, appearance, and user-started music. The watercolor background was removed at the user’s request; do not restore it. Keep body text readable and touch targets at least 44px.
 
-Checked November 6, 2026 at https://www.linkedin.com/in/mario-lin7/:
-
-- Leland High School: August 2026–Present, Grade 9. FRC Robotics 604, Leland Hackathon Club, and Key Club; engineering/hardware interests.
-- Stratford School: middle school August 2023–June 2026; elementary August 2017–May 2023, grades 1–5.
-- Almaden Hacks: co-founder in the profile headline and skill associations; Organizations lists Co-Leader, September 2026–Present, associated with Leland High School. Listed skills include Start-up Leadership and Co-creation. No event counts, audience size, or impact metrics are stated.
-- Stratford activities: Math Club, AMC 8/10, Python, Java, HTML, introductory Arduino, basketball starting point guard and co-captain.
-- ACDS Cougar Shootout: second place among 10+ teams, January 2026.
-- AMC 8: 22/25 in sixth grade, March 2024. AMC 10: 70/150 in seventh grade, November 2024; Mario explicitly confirmed the updated award title over its outdated description.
-- Breakthrough Silicon Valley volunteer tutor: listed term October–December 2026.
-- Chinese and English: native or bilingual proficiency. Spanish: limited working proficiency.
-- Auquara: Future City Competition prototype, awarded Excellence in Systems Integration; construction, project management, and leadership.
-
-## Capabilities and Constraints
-
-Mario describes Auquara as a floating city for a future where global warming puts Gold Coast underwater. The scene follows four user-supplied model photographs; unknown dimensions use an editable nominal 190 × 380 mm base. Keep reconstruction/source notes out of the visible project UI; preserve them in model documentation.
-
-The current design is a clean architectural model with a rectangular pale base, circular main island, pale-blue curved towers, white housing/tower shells, pale-gray outer modules, small roof/ground gardens, and a transparent planted greenhouse on the lower-left satellite. Paths to satellite districts remain clear. The viewer opens facing forward, supports unlimited horizontal orbit and exact overhead, has a reversible Top view/Landscape view button, keyboard arrows, T, Home/reset, and assembled/exploded views.
-
-The hero uses the Pegasus brain asset pinned to commit 52ba71e3b4bb53063eff035a6e2223388889ca1c. A solid distributed puzzle keeps about 65% assembled while 37 rounded pieces fill scattered gaps, holds complete for one second, then rebuilds. Drag rotates; arrow keys and Home are alternatives. Preserve its size, solid interior, and motion behavior.
-
-## Brand Commitments
-
-Apple-inspired white/porcelain surfaces, system typography, restrained blue actions, and physical, interruptible springs informed by the user’s Apple design guidance and Emil Kowalski reference. Specific headings, visible action labels, source-linked facts, generous consistent spacing, and complete mobile navigation. No generic pseudo-code, invented claims, decorative badge rows, or repeated scroll reveals.
-
-## Accessibility & Inclusion
-
-Preserve visible keyboard focus, responsive layout, readable light/dark contrast, 44px controls, reduced motion/transparency and increased-contrast behavior. Appearance persists locally. Animation controls pause motion; reduced motion starts with the complete brain. The user-supplied MP3 plays only after a click, supports pause/resume, and has an error state.
-
-## Operating Context
-
-Runtime dependencies are React, React DOM, and Three.js. Offline geometry generation uses the CSG/BVH development dependencies. Keep source brain input in scripts/assets, outside the deployed public directory. Preserve model downloads, generation/check scripts, and consolidated license notices. Generated build output, installed dependencies, private environment files, logs, and review screenshots are not tracked.
-
-## Product Principles
-
-- Lead with specific, verified work and link to its source.
-- Preserve user control, accessibility, and the requested model interactions.
-- Keep model generation reproducible and repository documentation current.
-
-The user supplied an Almaden Valley watercolor on November 9, 2026. It appears as a stationary decorative backdrop in the opening section, with theme-aware veils for readability. The brain and project interactions remain intact.
-
-## November 9, 2026 profile refresh
-
-Read the signed-in LinkedIn profile again on November 9. Experience now links Almaden Hacks to company 144108080 and states: co-founder since September 2026; student-led San Jose hackathon planned for June 2027; designed/developed almadenhacks.com; leads sponsorship outreach to businesses; coordinates team responsibilities and decision-making. Auquara is associated with Stratford School. The tutoring term, Leland clubs, and basketball tournament result remain confirmed. The public site incorporates these facts without implying that the future hackathon has already happened.
-
-The current request authorizes reference-inspired font aesthetics and wording changes. Space Grotesk now supplies display headings and DM Sans supplies readable body copy, self-hosted under OFL licenses. Preserve the watercolor, brain puzzle, city controls, appearance, music, model downloads, and responsive navigation.
-
-## Latest requested update
-
-The user removed the watercolor background. Use plain theme surfaces behind the brain; the original image asset remains unused. LinkedIn now lists SignalGuard: a phone-audio machine learning prototype for water-pump monitoring, healthy acoustic baselines, anomaly scoring, and maintenance history, associated with Leland High School. Field validation is planned; no real-world performance or deployment claims are established. Checked the signed-in profile November 9, 2026.
+## Runtime and provenance
+React, React DOM, Three.js. Brain and city generation/check scripts remain reproducible. The hero uses the Pegasus fsaverage5 cortical model; keep solid distributed puzzle behavior and reduced-motion support. City supports assembly/exploded, full orbit, top view, reset, and keyboard navigation. No account, contact form backend, or analytics. Keep private environment files, node_modules, dist, and screenshots out of commits. Fonts are self-hosted with OFL licenses in public/fonts.
