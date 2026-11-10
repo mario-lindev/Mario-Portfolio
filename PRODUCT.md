@@ -30,3 +30,7 @@ Refine the existing portfolio with rishithc.com’s observed Inter prose, Geist 
 
 ## Runtime and provenance
 React, React DOM, Three.js. Brain and city generation/check scripts remain reproducible. The hero uses the Pegasus fsaverage5 cortical model; keep solid distributed puzzle behavior and reduced-motion support. City supports assembly/exploded, full orbit, top view, reset, and keyboard navigation. No account, contact form backend, or analytics. Keep private environment files, node_modules, dist, and screenshots out of commits. Fonts are self-hosted with OFL licenses in public/fonts.
+
+## New projects and contact fix
+
+Checked the full signed-in LinkedIn Projects page again November 9, 2026: it lists SignalGuard (October–November 2026), Weave (October–November 2026), and Auquara (August 2024–January 2025). Weave is an AI video-editing platform developed for the Flip the Switch Hackathon, using five specialized Claude Code agents for editing, visual effects, quality assurance, and collaborative workflows. Stack: JavaScript, Node.js, Switch, FFmpeg. Contributor Rishith; associated with Leland. No public project URL was listed, so link to the LinkedIn projects page. The contact action retains the verified Mario profile URL and opens in a new tab; a dedicated linkedin-connect class replaces conflicting button-primary overrides and supplies padded, readable states in both themes.

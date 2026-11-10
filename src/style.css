@@ -631,3 +631,11 @@ html[data-theme=dark] .hero .button-primary,html[data-theme=dark] .hero .button-
 html[data-theme=dark] .appearance-toggle,html[data-theme=dark] .music-toggle { background: transparent; }
 @media(max-width:1050px) and (min-width:721px) { .header-inner { width: calc(100% - 48px); } .header-inner nav { gap: 16px; } .header-actions { gap: 2px; } .music-toggle span,.appearance-toggle span { display: none; } .hero-main { gap: 20px; } }
 @media(max-width:720px) { :root { --section-space: 64px; } .hero h1 { font-size: clamp(2.375rem,10vw,3rem); } .hero-copy>p.hero-statement { font-size: 1.375rem; } .hero-main { gap: 0; } .header-inner nav { gap: 30px; } .hero-actions { gap: 22px; } .hero .button-primary { font-size: .75rem; } .text-button { font-size: .6875rem; } .hero-foot>a { font-size: .6875rem; } .section-intro h2,.about-heading h2,.journey-heading h2,.almaden-title h2,.signalguard-heading h2 { font-size: 1.875rem; } .interest-menu { gap: 28px; } .interest-menu button { flex: 0 1 auto; font-size: .875rem; } .project-summary>div>p { max-width: 21ch; } }
+
+/* Dedicated contact action avoids primary-link and appearance overrides. */
+.linkedin-connect { display: inline-flex; align-items: center; justify-content: center; gap: 12px; min-height: 48px; max-width: 100%; margin-top: 30px; padding: 13px 22px; border: 1px solid transparent; border-radius: 6px; background: #38627e; color: #fff; font-family: var(--font-mono); font-size: .8125rem; line-height: 1.5; text-align: center; transition: background 160ms, transform 160ms var(--ease); }
+.linkedin-connect:hover { background: #294b63; }
+.linkedin-connect:active { transform: translateY(1px); }
+html[data-theme=dark] .linkedin-connect { background: #9cbed6; color: #111519; }
+html[data-theme=dark] .linkedin-connect:hover { background: #bfd7e8; }
+@media(prefers-contrast:more) { .linkedin-connect { border-color: currentColor; } }

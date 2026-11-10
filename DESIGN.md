@@ -50,3 +50,7 @@ Keep the solid distributed brain puzzle, pause control, drag/keyboard rotation, 
 
 ## Content alignment
 PRODUCT.md lists the current source-backed facts and removals. The full Experience detail page still lists Almaden Hacks duties; retain them. Remove historical school/AMC/basketball-role content, but keep the currently listed ACDS award and languages. Use neutral current project summaries without obsolete school associations. Never infer a removed fact from an old source document.
+
+## Contact action and Weave
+
+Weave shares the existing open project row, with title, date metadata, plain description, contributor credit, and LinkedIn source. Contact uses a dedicated linkedin-connect action: 48px minimum height, 13px/22px padding, 6px corners, mono 13px text. Light: #38627e fill and white text; dark: #9cbed6 fill and #111519 text. Hover darkens/lightens respectively, focus retains the site outline, press moves 1px. This is independent of the older button-primary/link styles.
