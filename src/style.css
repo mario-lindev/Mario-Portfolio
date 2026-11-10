@@ -475,16 +475,6 @@ html[data-theme=dark] .interest-menu button[aria-pressed=true] { color: var(--in
 .language-summary .inline-link { justify-self: start; }
 @media(max-width:720px) { .timeline li:not(:last-child) { padding-bottom: 38px; } .education-records .timeline { margin-top: 40px; } }
 
-/* User-supplied Almaden Valley watercolor grounds the opening in San Jose. */
-.hero { position: relative; isolation: isolate; }
-.hero::before { content: ''; position: absolute; z-index: -1; pointer-events: none; inset: -34px calc(-1 * var(--space)) 0; background-image: linear-gradient(90deg,rgba(255,255,255,.72),rgba(255,255,255,.18) 65%),url('/images/almaden-valley-watercolor.png'); background-size: cover; background-position: center bottom; mask-image: linear-gradient(to bottom,transparent,#000 12%,#000 85%,transparent); }
-.hero-copy>p, .hero .text-button { color: #464b50; }
-.hero-foot { border-color: #8b9c9638; }
-html[data-theme=dark] .hero::before { background-image: linear-gradient(90deg,rgba(17,18,22,.94),rgba(17,18,22,.79) 70%),url('/images/almaden-valley-watercolor.png'); }
-html[data-theme=dark] .hero-copy>p, html[data-theme=dark] .hero .text-button { color: #d1d4dc; }
-@media(max-width:720px) { .hero::before { inset-block-start: -36px; background-position: 62% bottom; } }
-@media(prefers-contrast:more) { .hero::before { opacity: .2; } }
-
 /* November 2026: a quieter, project-led typographic system. */
 @font-face { font-family: 'Space Grotesk'; src: url('/fonts/space-grotesk-variable.woff2') format('woff2'); font-style: normal; font-weight: 300 700; font-display: swap; }
 @font-face { font-family: 'DM Sans'; src: url('/fonts/dm-sans-variable.woff2') format('woff2'); font-style: normal; font-weight: 100 1000; font-display: swap; }
@@ -508,7 +498,6 @@ button { caret-color: var(--blue); }
 .hero-foot { font-size: .8125rem; padding-top: 20px; padding-bottom: 26px; }
 .hero-foot>a { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; color: var(--secondary); }
 .hero-foot>a:hover { color: var(--blue); }
-.hero::before { opacity: .72; }
 .hero-art { height: 530px; }
 .hero .art-caption { font-size: .6875rem; }
 .section-intro { align-items: start; }
@@ -581,3 +570,16 @@ html[data-theme=dark] .about-section { background: var(--page); }
   .contact-inner { padding-block: 72px; }
   .contact-inner h2 { font-size: clamp(2rem,8.8vw,3rem); }
 }
+
+/* SignalGuard uses the open project layout and existing type roles. */
+.signalguard-section { display: grid; grid-template-columns: .85fr 1.4fr; gap: 80px; padding-block: 88px; margin-top: 32px; border-bottom: 1px solid var(--line); }
+.signalguard-heading h2 { font-size: clamp(2rem,3.7vw,3rem); }
+.signalguard-heading h2 span { color: var(--blue); }
+.signalguard-heading>p { font-size: .8125rem; color: var(--secondary); margin-top: 16px; }
+.signalguard-heading>.inline-link { margin-top: 24px; min-height: 44px; }
+.signalguard-story>p { font-size: 1rem; line-height: 1.8; max-width: 65ch; color: var(--secondary); }
+.signalguard-story>p.project-lead { font-size: clamp(1.5rem,2.6vw,2rem); line-height: 1.3; color: var(--ink); margin-bottom: 24px; }
+.signalguard-story>p+p { margin-top: 16px; }
+.signalguard-story>p.project-status { margin-top: 24px; font-size: .8125rem; }
+@media(max-width:1050px) { .signalguard-section { gap: 40px; } }
+@media(max-width:720px) { .signalguard-section { grid-template-columns: 1fr; gap: 30px; padding-block: 56px; margin-top: 8px; } .signalguard-heading h2 { font-size: 2.125rem; } .signalguard-heading>.inline-link { margin-top: 12px; } .signalguard-story>p.project-lead { font-size: 1.5rem; } }

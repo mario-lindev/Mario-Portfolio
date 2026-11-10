@@ -202,3 +202,7 @@ Hero name is 4–6rem with a 1.5–2rem secondary statement. Section headings ar
 A separate, open two-column Almaden Hacks section presents the actual website, planned June 2027 event, sponsorship outreach, and team coordination. Mobile stacks these columns. Copy is first-person, factual, and concise. No new claims or project metrics were added. School, tutoring, languages, recognition, and downloads remain present.
 
 Verification for this update: model and brain checks passed; Vite production build passed. Browser inspection confirmed the new heading font, desktop and mobile composition, no horizontal overflow at 1280px, 390px and 320px, light/dark appearance, new Almaden Hacks links and copy, Code panel switching, Auquara disclosure, exploded view, and top view. Existing Three.js shared-chunk size advisory remains. Impeccable's detector could not run because its binary was not installed; manual source and rendered checks were used.
+
+## Background removal and SignalGuard
+
+The latest user request supersedes the watercolor background direction: remove the hero pseudo-element and its opacity/gradient/image rules in both themes. Keep the brain and plain theme backgrounds. SignalGuard uses the existing open two-column project typography with a mobile stack, prototype status, and LinkedIn source link.
