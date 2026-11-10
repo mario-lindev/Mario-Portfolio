@@ -192,3 +192,13 @@ Finish review: passed for this refinement. Browser checks confirmed no horizonta
 ## Almaden Valley watercolor
 
 The opening uses the user-supplied “Watercolor Almaden Valley Landscape.png” as a stationary decorative backdrop, stored at public/images/almaden-valley-watercolor.png. It is not generated or recolored. CSS veils protect the copy in light/dark appearance, with a gentler backdrop for increased contrast. Keep the brain interaction above it. The original artwork was supplied by Mario on November 9, 2026; no artist or license claims are inferred.
+
+## November 9 typography and voice update (current authority)
+
+Mode: Experience. Inspired by the project-first simplicity and personal voice of rishithc.com, varun-chil.com, and aadityashah.vercel.app. Preserve the established blue, white/porcelain, dark appearance, original artwork, and spatial interactions. The user explicitly requested a new font aesthetic: this supersedes earlier platform-font commitments. Self-hosted Space Grotesk (500 display, 600 wordmark) and DM Sans (400 body, variable supporting weights) replace platform type. Sources and OFL licenses live in public/fonts; font-display is swap.
+
+Hero name is 4–6rem with a 1.5–2rem secondary statement. Section headings are 2.25–3.5rem. Body text is generally 1rem with 1.7–1.8 leading; compact metadata is .75–.875rem. Text stays within 65ch; naturally shorter columns remain intentional. Headings use -.025 to -.04em tracking. Keep the watercolor beneath readable veils. Hero actions become quieter ink buttons with 8px corners; project disclosure shares that corner treatment. All controls retain a 44px touch target.
+
+A separate, open two-column Almaden Hacks section presents the actual website, planned June 2027 event, sponsorship outreach, and team coordination. Mobile stacks these columns. Copy is first-person, factual, and concise. No new claims or project metrics were added. School, tutoring, languages, recognition, and downloads remain present.
+
+Verification for this update: model and brain checks passed; Vite production build passed. Browser inspection confirmed the new heading font, desktop and mobile composition, no horizontal overflow at 1280px, 390px and 320px, light/dark appearance, new Almaden Hacks links and copy, Code panel switching, Auquara disclosure, exploded view, and top view. Existing Three.js shared-chunk size advisory remains. Impeccable's detector could not run because its binary was not installed; manual source and rendered checks were used.

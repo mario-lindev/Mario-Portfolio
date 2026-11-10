@@ -55,3 +55,9 @@ Runtime dependencies are React, React DOM, and Three.js. Offline geometry genera
 - Keep model generation reproducible and repository documentation current.
 
 The user supplied an Almaden Valley watercolor on November 9, 2026. It appears as a stationary decorative backdrop in the opening section, with theme-aware veils for readability. The brain and project interactions remain intact.
+
+## November 9, 2026 profile refresh
+
+Read the signed-in LinkedIn profile again on November 9. Experience now links Almaden Hacks to company 144108080 and states: co-founder since September 2026; student-led San Jose hackathon planned for June 2027; designed/developed almadenhacks.com; leads sponsorship outreach to businesses; coordinates team responsibilities and decision-making. Auquara is associated with Stratford School. The tutoring term, Leland clubs, and basketball tournament result remain confirmed. The public site incorporates these facts without implying that the future hackathon has already happened.
+
+The current request authorizes reference-inspired font aesthetics and wording changes. Space Grotesk now supplies display headings and DM Sans supplies readable body copy, self-hosted under OFL licenses. Preserve the watercolor, brain puzzle, city controls, appearance, music, model downloads, and responsive navigation.
