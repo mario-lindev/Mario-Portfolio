@@ -34,3 +34,7 @@ React, React DOM, Three.js. Brain and city generation/check scripts remain repro
 ## New projects and contact fix
 
 Checked the full signed-in LinkedIn Projects page again November 9, 2026: it lists SignalGuard (October–November 2026), Weave (October–November 2026), and Auquara (August 2024–January 2025). Weave is an AI video-editing platform developed for the Flip the Switch Hackathon, using five specialized Claude Code agents for editing, visual effects, quality assurance, and collaborative workflows. Stack: JavaScript, Node.js, Switch, FFmpeg. Contributor Rishith; associated with Leland. No public project URL was listed, so link to the LinkedIn projects page. The contact action retains the verified Mario profile URL and opens in a new tab; a dedicated linkedin-connect class replaces conflicting button-primary overrides and supplies padded, readable states in both themes.
+
+## November 11 project refresh
+
+The signed-in LinkedIn Projects page now lists Ember (November 2026–present), alongside SignalGuard, Weave, and Auquara. Ember is a Python wildfire modeling project associated with Leland High School. It estimates seven-day fire discovery and 24-hour spread, exports GeoJSON, and has been tested on synthetic data. Real-world forecast accuracy is unmeasured.

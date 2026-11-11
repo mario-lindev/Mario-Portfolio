@@ -77,6 +77,17 @@ function Project({motion}){
     <div className="model-downloads"><a href="/models/auquara.glb" download>Download 3D model (.glb)</a><a href="/models/auquara.scad" download>Download editable CAD (.scad)</a></div>
   </section>;
 }
+function Ember(){
+  return <section id="ember" className="signalguard-section section-shell" aria-labelledby="ember-title">
+    <div className="signalguard-heading"><h2 id="ember-title">Ember<span>.</span></h2><p>Python · Remote sensing · November 2026–present</p><a className="inline-link" href={LINKEDIN+'details/projects/'} target="_blank" rel="noreferrer">Project on LinkedIn <Icon name="external" size={17}/></a></div>
+    <div className="signalguard-story">
+      <p className="project-lead">Modeling wildfire discovery and spread.</p>
+      <p>I built Ember to estimate where wildfires might be discovered over the next seven days and where an active fire might spread in the next 24 hours. The models combine satellite observations and fire records with factors such as wind, terrain, and vegetation.</p>
+      <p>Ember exports forecasts as GeoJSON for mapping. I tested both workflows on synthetic data; real-world forecast accuracy hasn’t been measured yet.</p>
+      <p className="project-status">Associated with Leland High School</p>
+    </div>
+  </section>;
+}
 function SignalGuard(){
   return <section className="signalguard-section section-shell" aria-labelledby="signalguard-title">
     <div className="signalguard-heading"><h2 id="signalguard-title">SignalGuard<span>.</span></h2><p>Machine learning · October–November 2026</p><a className="inline-link" href={LINKEDIN+'details/projects/'} target="_blank" rel="noreferrer">Project on LinkedIn <Icon name="external" size={17}/></a></div>
@@ -144,6 +155,7 @@ function App(){
     <main id="main">
       <section className="hero section-shell"><div className="hero-main"><div className="hero-copy"><h1>Mario Lin<span className="hero-period">.</span></h1><p className="hero-statement">A student exploring<br/>how things work.</p><p>I’m at Leland High School in San Jose. I explore robotics and machine learning, and I’m a co-founder of Almaden Hacks.</p><div className="hero-actions"><a href="#work" className="button-primary">Explore Auquara <Icon name="arrow" size={18}/></a><a href="#about" className="text-button">What I’m up to <Icon name="down" size={16}/></a></div></div><div className="hero-art"><BrainObject motion={motion}/><div className="art-caption"><span>Interactive brain puzzle. Drag to rotate.</span><button className="motion-control" onClick={()=>setMotion(v=>!v)} aria-label={motion?'Pause animations':'Play animations'} aria-pressed={motion}><Icon name={motion?'pause':'play'} size={14}/></button></div></div></div><div className="hero-foot"><span>Leland High School <span className="foot-dot"/> Grade 9</span><a href="#almaden">Co-founder of Almaden Hacks <Icon name="down" size={14}/></a></div></section>
       <Project motion={motion}/>
+      <Ember/>
       <SignalGuard/>
       <Weave/>
       <AlmadenHacks/>
